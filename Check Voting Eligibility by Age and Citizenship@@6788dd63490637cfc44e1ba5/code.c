@@ -3,10 +3,10 @@ int main(){
     int age,status;
     scanf("%d %d",&age ,&status);
     if((age>=18) && (status==0 || status==1)){
-        printf("Eligible");
+        printf("Eligible\n");
     }
     else{
-        printf("Not Eligible");
+        printf("Not Eligible\n");
     }
     return 0;
 }
