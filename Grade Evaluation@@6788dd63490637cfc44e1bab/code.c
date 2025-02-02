@@ -6,7 +6,7 @@ int main(){
         case 'A':
             printf("Excellent");
             break;
-        case 'B';
+        case 'B':
             printf("Good");
             break;
         case 'C':
