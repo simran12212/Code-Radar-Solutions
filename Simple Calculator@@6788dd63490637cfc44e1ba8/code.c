@@ -15,13 +15,14 @@ int main(){
     else if(operator == '/'){
         if(b!=0){
             printf("%d\n",a/b);
+        }
             else{
-                printf("Error");
-            }
+                printf("Error\n");
+            
         }
     }
     else{
-        printf("Error");
+        printf("Error\n");
     }
     return 0;
 }
