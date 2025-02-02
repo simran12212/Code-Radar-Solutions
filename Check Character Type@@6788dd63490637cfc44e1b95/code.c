@@ -10,11 +10,11 @@ int main(){
     else if(c=='A'|| c=='E'|| c=='I'|| c=='O'|| c=='U'||c=='a'|| c=='e'|| c=='i'|| c=='o'||c=='u'){
         printf("Vowel\n");
     }
-    else if(c>='A'&& c<='Z')||(c>='a'&& c<='z'){
-        printf("constant\n");
+    else if((c>='A'&& c<='Z')||(c>='a'&& c<='z')){
+        printf("Consonant\n");
     }
     else{
-        printf("Special Character");
+        printf("Special Character\n");
     }
     return 0;
 }
