@@ -3,13 +3,13 @@ int main(){
     int a,b,c;
     scanf("%d %d %d",&a, &b, &c);
     if(a==b==c){
-        printf("Equilateral");
+        printf("Equilateral\n");
     }
     else if(a!=b!=c){
-        printf("Scalene");
+        printf("Scalene\n");
     }
     else{
-        printf("Isosceles");
+        printf("Isosceles\n");
     }
     return 0;
 }
