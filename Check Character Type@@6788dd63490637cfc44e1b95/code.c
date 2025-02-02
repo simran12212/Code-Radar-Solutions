@@ -4,10 +4,10 @@ int main(){
     int a;
     scanf("%d",&a);
     scanf("%c",&c);
-    if(a<=0 && a>=9){
+    if(a>=0 && a<=9){
         printf("Digit\n");
     }
-    else if(c=='A'&& c=='E'&& c=='I'&& c=='O'&& c=='U')||(c=='a'&& c=='e'&& c=='i'&& c=='o'&& c=='u'){
+    else if(c=='A'|| c=='E'|| c=='I'|| c=='O'|| c=='U'||c=='a'|| c=='e'|| c=='i'|| c=='o'||c=='u'){
         printf("Vowel\n");
     }
     else if(c>='A'&& c<='Z')||(c>='a'&& c<='z'){
