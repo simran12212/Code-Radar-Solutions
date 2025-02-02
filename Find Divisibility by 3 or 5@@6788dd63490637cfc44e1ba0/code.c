@@ -11,7 +11,7 @@ int main(){
     else if(a%3==0 && a%5==0){
         printf("Divisible by Both\n");
     }
-    else{
+    else(a%3!==0 && a%5!==0){
         printf("Not Divisible\n");
     }
     return 0;
