@@ -1,8 +1,8 @@
 #include <stdio.h>
 int main(){
-    int temperature;
-    scanf("%d",&temperature);
-    if((temperature==0) || (temperature<0)){
+    int temp;
+    scanf("%d",&temp);
+    if((temp<0) || (temp==0)){
         printf("Freezing");
     }
     else{
