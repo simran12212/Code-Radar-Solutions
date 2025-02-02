@@ -5,8 +5,8 @@ int main(){
     if(a<=1){
         printf("Not Prime\n");
     }
-    
-    for( int i=2;i*i<=a;i++){
+    int i;
+    for( i=2;i*i<=a;i++){
         if(a % i ==0){
             printf("Not Prime\n");
         }
