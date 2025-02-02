@@ -1,8 +1,8 @@
 #include <stdio.h>
 int main(){
-    int a,b,;
+    int a,b;
     char operator;
-    scanf("%d %c %d ",&a, &operator, &b);
+    scanf("%d %c %d",&a ,&operator, &b);
     switch(operator){
         case '+':
         printf("%d\n",a+b);
@@ -15,9 +15,8 @@ int main(){
         break;
         case '/':
         printf("%d\n",a/b);
-        break;
         default:
-        printf("Invalid");
+        printf("error");
         break;
     }
     return 0;
