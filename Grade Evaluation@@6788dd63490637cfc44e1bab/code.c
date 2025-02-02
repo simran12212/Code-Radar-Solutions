@@ -4,22 +4,22 @@ int main(){
     scanf("%c",&ch);
     switch(ch){
         case 'A':
-        printf("Excellent\n");
+        printf("Excellent");
         break;
         case 'B';
-        printf("Good\n");
+        printf("Good");
         break;
         case 'C';
-        printf("Average\n");
+        printf("Average");
         break;
         case 'D';
-        printf("Below Average\n");
+        printf("Below Average");
         break;
         case 'F';
         printf("Fail\n");
         break;
         default:
-        printf("Invalid grade\n");
+        printf("Invalid grade");
         break;
     }
     return 0;
