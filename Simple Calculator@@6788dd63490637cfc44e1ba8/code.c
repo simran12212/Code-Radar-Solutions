@@ -20,8 +20,5 @@ int main(){
                 printf("Error\n");
         }
     }
-    else{
-        printf("Error\n");
-    }
     return 0;
 }
