@@ -14,11 +14,11 @@ int main(){
         printf("%d",a*b);
         break;
         case '/':
-        if(b==0){
-            printf("%d",a/b);
+        if(b!=0){
+            printf("error\n");
         }
         else{
-            printf("error");
+            printf("%d\n",a/b);
             break;
         }
         default:
