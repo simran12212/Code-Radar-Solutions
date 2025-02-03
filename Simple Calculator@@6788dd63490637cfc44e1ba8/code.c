@@ -3,23 +3,21 @@ int main(){
     int a, b;
     char operator;
     scanf("%d %c %d", &a, &operator, &b);
-    if(operator=='+'){
-        printf("%d/n",a + b);
-    }
-    else if(operator=='-'){
-        printf("%d\n",a - b);
-    }
-    else if(operator=='*'){
-        printf("%d\n",a * b);
-    }
-    else if(operator=='/'){
+    switch(opreator){
+        case '+':
+        printf("%d",a+b);
+        case '-':
+        printf("%d",a-b);
+        case '*':
+        printf("%d",a*b);
+        case '/':
         if(b!=0){
-            printf("%d\n",a / b);
+            printf("%d",a/b);
         }
-            else{
-                printf("Error\n");
-        
+        else{
+            printf("error");
+        default:
+        printf("error");
+        }
+        return 0;
     }
-    return 0;
-}
-}
