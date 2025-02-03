@@ -20,9 +20,10 @@ int main(){
         else{
             printf("error");
             break;
+        }
         default:
         printf("error");
         break;
-        }
         return 0;
-    }
+     }
+}
