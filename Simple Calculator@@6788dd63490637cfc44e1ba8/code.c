@@ -2,7 +2,7 @@
 int main(){
     int a, b;
     char operator;
-    scanf("%d %c %d", &a, &operator, &b);
+    scanf("%d %d %c", &a, &b, &operator);
     switch(operator){
         case '+':
         printf("%d\n",a+b);
@@ -19,11 +19,12 @@ int main(){
         }
         else{
             printf("%d\n",a/b);
-            break;
+    
         }
+        break;
         default:
         printf("error\n");
-        break;
+        
      }
      return 0;
 }
