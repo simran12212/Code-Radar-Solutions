@@ -6,9 +6,9 @@ int main(){
         printf("32");
         return 0;
     }
-    while((num & 1)==0){
+    while((num & 1) == 0){
         count++;
-        num >> 1;
+        num >>= 1;
     }
     printf("%d",count);
     return 0;
