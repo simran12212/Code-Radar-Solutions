@@ -1,6 +1,6 @@
 #include <stdio.h>
 int main(){
-    unsigned int num, flipped;
+     int num, flipped;
     scanf("%u\n", &num);
     flipped = ~num;
     printf("%u\n",flipped);
