@@ -1,8 +1,8 @@
 #include <stdio.h>
 int main(){
     unsigned int num, flipped;
-    scanf("%u", &num);
+    scanf("%u\n", &num);
     flipped = ~num;
-    printf("%u",flipped);
+    printf("%u\n",flipped);
     return 0;
 }
