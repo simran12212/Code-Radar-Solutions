@@ -3,6 +3,6 @@ int main(){
     unsigned int num, flipped;
     scanf("%u", &num);
     flipped = ~num;
-    printf("%u\n",flipped);
+    printf("%u",flipped);
     return 0;
 }
