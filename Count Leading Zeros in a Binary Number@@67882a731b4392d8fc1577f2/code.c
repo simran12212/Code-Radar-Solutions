@@ -7,6 +7,6 @@ int main(){
         break;
         count++;
     }
-    printf("%d/n",count);
+    printf("%d",count);
     return 0;
 }
