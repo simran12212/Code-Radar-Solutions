@@ -5,11 +5,11 @@ int main(){
     for (int i = N; i >= 1; i--) {
         for(int j = i; j >= 1; j--) {
             printf("%d ", j);
-            if (j < i) {
-                printf(" ");
+           
             }
+            printf("\n");
         }
-        printf("\n");
-    }
+        
+    
     return 0;
 }
