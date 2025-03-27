@@ -1,5 +1,5 @@
 #include <stdio.h>
-void trackPlayerRanks(int rankes[],int n,int player[],int m, int result[]) {
+void trackPlayerRanks(int ranked[],int n,int player[],int m, int result[]) {
     int ranks[n];
     ranks[0] = 1;
     for (int i = 1; i < n; i++) {
