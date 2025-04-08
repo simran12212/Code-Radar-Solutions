@@ -10,13 +10,13 @@ void findLeaders(int arr[], int N) {
 
     // Traverse the array from right to left
     for (int i = N - 2; i >= 0; i--) {
-        if (arr[i] > maxFromRight) {
+        if (arr[i] >= maxFromRight) {  // Include elements equal to maxFromRight as leaders
             maxFromRight = arr[i];
             leaders[count++] = maxFromRight;  // Store the leader
         }
     }
 
-    // Print leaders in reverse order to match the required order
+    // Print leaders in reverse order to match the required output format
     for (int i = count - 1; i >= 0; i--) {
         printf("%d ", leaders[i]);
     }
