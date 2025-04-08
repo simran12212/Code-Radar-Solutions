@@ -3,11 +3,11 @@
 int main() {
     int n, i, largestEven = -1;
 
-    printf("Enter the number of elements in the array: ");
+    printf("");
     scanf("%d", &n);
 
     int array[n];
-    printf("Enter the elements of the array:\n");
+    printf("\n");
     for (i = 0; i < n; i++) {
         scanf("%d", &array[i]);
         if (array[i] % 2 == 0 && array[i] > largestEven) {
@@ -16,7 +16,7 @@ int main() {
     }
 
     // Ensure proper spacing in the output
-    printf("The largest even number is: %d\n", largestEven);
+    printf("%d\n", largestEven);
 
     return 0;
 }
