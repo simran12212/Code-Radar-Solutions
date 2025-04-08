@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 void findPairs(int arr[], int N, int T) {
-    // Sort the array to handle uniqueness easily
+    // Sort the array to ensure uniqueness
     for (int i = 0; i < N - 1; i++) {
         for (int j = i + 1; j < N; j++) {
             if (arr[i] > arr[j]) {
@@ -31,7 +31,7 @@ void findPairs(int arr[], int N, int T) {
 int main() {
     int N, T;
 
-    // Read the size of the array and the target sum
+    // Read the size of the array
     scanf("%d", &N);
     int arr[N];
     
