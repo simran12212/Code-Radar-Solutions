@@ -3,7 +3,7 @@
 int findMajorityElement(int arr[], int n) {
     int count = 0, candidate = -1;
 
-
+    
     for (int i = 0; i < n; i++) {
         if (count == 0) {
             candidate = arr[i];
@@ -43,7 +43,7 @@ int main() {
     if (majorityElement != -1) {
         printf("%d", majorityElement); 
     } else {
-        printf("No majority element");
+        printf("-1"); 
     }
 
     return 0;
