@@ -14,28 +14,28 @@ void sortArray(int arr[], int size) {
 }
 
 int main() {
-    int n;
+    int N;
     printf("");
-    scanf("%d", &n);
+    scanf("%d", &N);
 
-    int array[n];
+    int array[N];
     printf("\n");
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < N; i++) {
         scanf("%d", &array[i]);
     }
 
     // Sort the array
-    sortArray(array, n);
+    sortArray(array, N);
 
     // Find the median
     int median;
     if (n % 2 == 0) {
-        median = (array[n / 2 - 1] + array[n / 2]) / 2; // Integer division for average
+        median = (array[N / 2 - 1] + array[n / 2]) / 2; // Integer division for average
     } else {
-        median = array[n / 2]; // Middle element
+        median = array[N / 2]; // Middle element
     }
 
-    printf("%d\n", median);
+    printf("%d", median);
 
     return 0;
 }
