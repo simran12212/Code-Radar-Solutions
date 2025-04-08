@@ -30,7 +30,7 @@ int main() {
     // Find the median
     int median;
     if (N % 2 == 0) {
-        median = (array[N / 2 - 1] + array[n / 2]) / 2; // Integer division for average
+        median = (array[N / 2 - 1] + array[N / 2]) / 2; // Integer division for average
     } else {
         median = array[N / 2]; // Middle element
     }
