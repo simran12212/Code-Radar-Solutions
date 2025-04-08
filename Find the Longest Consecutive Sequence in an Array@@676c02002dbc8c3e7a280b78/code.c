@@ -32,7 +32,7 @@ int main() {
         scanf("%d", &arr[i]); 
     }
 
-    int longestSequence = findLongestConsecutiveSequence(arr, n);
+    int longestSequence = findLongestConsecutiveSequence(arr, N);
     printf("%d", longestSequence); 
 
     return 0;
