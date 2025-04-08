@@ -11,7 +11,7 @@ int findLongestConsecutiveSequence(int arr[], int N) {
             if (arr[j] == current + 1) {
                 current++;
                 count++;
-                j = -1; h
+                j = -1; 
             }
         }
 
