@@ -11,7 +11,7 @@ int findSmallestMissingPositive(int arr[], int N) {
 
     
     for (i = 0; i < N; i++) {
-        int val = abs(arr[i]);
+        int val = arr[i];
         if (val <= N && arr[val - 1] > 0) {
             arr[val - 1] = -arr[val - 1];
         }
