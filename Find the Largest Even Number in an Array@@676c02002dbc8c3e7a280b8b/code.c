@@ -1,7 +1,8 @@
 #include <stdio.h>
+#include <limits.h>
 
 int main() {
-    int N, largestEven = -1;
+    int N, largestEven = INT_MIN;  // Initialize with smallest possible integer
     
     // Read the size of the array
     scanf("%d", &N);
@@ -19,7 +20,11 @@ int main() {
     }
     
     // Output the largest even number or -1 if no even number exists
-    printf("%d\n", largestEven);
+    if (largestEven == INT_MIN) {
+        printf("-1\n");
+    } else {
+        printf("%d\n", largestEven);
+    }
     
     return 0;
 }
