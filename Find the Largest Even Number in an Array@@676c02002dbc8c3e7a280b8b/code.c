@@ -1,14 +1,14 @@
 #include <stdio.h>
 
 int main() {
-    int n, i, largestEven = -1;
+    int N, i, largestEven = -1;
 
     printf("");
-    scanf("%d", &n);
+    scanf("%d", &N);
 
     int array[n];
     printf("\n");
-    for (i = 0; i < n; i++) {
+    for (i = 0; i < N; i++) {
         scanf("%d", &array[i]);
         if (array[i] % 2 == 0 && array[i] > largestEven) {
             largestEven = array[i];
