@@ -1,18 +1,18 @@
 #include <stdio.h>
 
 int main() {
-    int n, i, largestEven = -1;
+    int N, i, largestEven = -1;
 
     printf("");
-    scanf("%d", &n);
+    scanf("%d", &N);
 
-    int array[n];
+    int array[N];
     printf("\n");
-    for (i = 0; i < n; i++) {
+    for (i = 0; i < N; i++) {
         scanf("%d", &array[i]);
-        if (array[i] % 2 == 0) { // Check if the number is even
+        if (array[i] % 2 == 0) { 
             if (largestEven == -1 || array[i] > largestEven) {
-                largestEven = array[i]; // Update if it's the largest even so far
+                largestEven = array[i]; 
             }
         }
     }
