@@ -1,23 +1,25 @@
 #include <stdio.h>
 
 int main() {
-    int n, k, count = 0;
-
-    // Input the size of the array and the value of K
-    printf("");
-    scanf("%d %d", &n, &k);
-
-    int array[n];
-    printf("\n");
-    for (int i = 0; i < n; i++) {
-        scanf("%d", &array[i]);
-        if (array[i] == k) {
-            count++; // Increment count if the element matches K
+    int N, K, count = 0;
+    
+    // Read the size of the array (N) and the target value (K)
+    scanf("%d %d", &N, &K);
+    
+    int arr[N];
+    
+    // Read array elements
+    for (int i = 0; i < N; i++) {
+        scanf("%d", &arr[i]);
+        
+        // Check if the current element is equal to K
+        if (arr[i] == K) {
+            count++;
         }
     }
-
-    // Output the count
+    
+    // Output the count of elements equal to K
     printf("%d\n", count);
-
+    
     return 0;
 }
