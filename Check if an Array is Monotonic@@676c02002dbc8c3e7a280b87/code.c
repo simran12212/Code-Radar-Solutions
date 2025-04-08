@@ -1,28 +1,34 @@
 #include <stdio.h>
 
-void calculateRunningSum(int arr[], int n) {
-    int runningSum[n];
-    runningSum[0] = arr[0]; // Initialize the first element
+int isMonotonic(int arr[], int n) {
+    int increasing = 1, decreasing = 1;
 
     for (int i = 1; i < n; i++) {
-        runningSum[i] = runningSum[i - 1] + arr[i];
+        if (arr[i] > arr[i - 1]) {
+            decreasing = 0; // Not decreasing
+        }
+        if (arr[i] < arr[i - 1]) {
+            increasing = 0; // Not increasing
+        }
     }
 
-    for (int i = 0; i < n; i++) {
-        printf("%d ", runningSum[i]); // Print the running sum
-    }
+    return increasing || decreasing; // Returns 1 if monotonic, 0 otherwise
 }
 
 int main() {
     int n;
-    scanf("%d", &n); // Read the size of the array
+    scanf("%d", &n); // Read the number of elements
 
     int arr[n];
     for (int i = 0; i < n; i++) {
         scanf("%d", &arr[i]); // Read the array elements
     }
 
-    calculateRunningSum(arr, n);
+    if (isMonotonic(arr, n)) {
+        printf("YES");
+    } else {
+        printf("NO");
+    }
 
     return 0;
 }
