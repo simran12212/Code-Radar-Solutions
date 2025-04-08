@@ -1,41 +1,38 @@
 #include <stdio.h>
+#include <stdlib.h>  // For the qsort function
 
-// Function to sort the array
-void sortArray(int arr[], int size) {
-    for (int i = 0; i < size - 1; i++) {
-        for (int j = 0; j < size - i - 1; j++) {
-            if (arr[j] > arr[j + 1]) {
-                int temp = arr[j];
-                arr[j] = arr[j + 1];
-                arr[j + 1] = temp;
-            }
-        }
-    }
+// Comparison function for qsort
+int compare(const void *a, const void *b) {
+    return (*(int *)a - *(int *)b);
 }
 
 int main() {
     int N;
-    printf("");
+    
+    // Read the size of the array
     scanf("%d", &N);
-
-    int array[N];
-    printf("\n");
+    
+    int arr[N];
+    
+    // Read array elements
     for (int i = 0; i < N; i++) {
-        scanf("%d", &array[i]);
+        scanf("%d", &arr[i]);
     }
-
+    
     // Sort the array
-    sortArray(array, N);
-
-    // Find the median
+    qsort(arr, N, sizeof(int), compare);
+    
     int median;
     if (N % 2 == 0) {
-        median = (array[N / 2 - 1] + array[N / 2]) / 2; // Integer division for average
+        // If N is even, median is the average of the two middle elements
+        median = (arr[N / 2 - 1] + arr[N / 2]) / 2;
     } else {
-        median = array[N / 2]; // Middle element
+        // If N is odd, median is the middle element
+        median = arr[N / 2];
     }
-
-    printf("%d", median);
-
+    
+    // Output the median
+    printf("%d\n", median);
+    
     return 0;
 }
