@@ -21,7 +21,7 @@ int main() {
         }
     }
 
-    printf("%d", second_largest); 
+    printf("%d\n", second_largest); 
 
     return 0;
 }
