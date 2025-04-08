@@ -1,33 +1,31 @@
 #include <stdio.h>
 
 int main() {
-    int N, i;
-    printf("");
-    scanf("%d", &N); 
+    int n, i;
+    scanf("%d", &n); 
 
-    int arr[N];
-    for (i = 0; i < N; i++) {
+    int arr[n];
+    for (i = 0; i < n; i++) {
         scanf("%d", &arr[i]); 
     }
 
-    
     int largest = arr[0];
-    for (i = 1; i < N; i++) {
+    int second_largest = -1e9;
+    for (i = 1; i < n; i++) {
         if (arr[i] > largest) {
-            largest = arr[i];
+            second_largest = largest; 
+            largest = arr[i];        
+        } else if (arr[i] > second_largest && arr[i] != largest) {
+            second_largest = arr[i]; 
         }
     }
 
     
-    int second_largest = -1e9; 
-    for (i = 0; i < N; i++) {
-        if (arr[i] != largest && arr[i] > second_largest) {
-            second_largest = arr[i];
-        }
+    if (second_largest == -1e9) {
+        second_largest = -1;
     }
 
     printf("%d", second_largest); 
 
     return 0;
-
 }
