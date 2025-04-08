@@ -7,6 +7,12 @@ int compare(const void *a, const void *b) {
 }
 
 void findMinDifferencePair(int arr[], int N) {
+    // Handle the case where the array size is 1
+    if (N < 2) {
+        printf("-1\n");
+        return;
+    }
+
     // Sort the array
     qsort(arr, N, sizeof(int), compare);
 
