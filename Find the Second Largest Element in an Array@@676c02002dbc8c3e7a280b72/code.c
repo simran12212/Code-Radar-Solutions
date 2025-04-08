@@ -2,6 +2,7 @@
 
 int main() {
     int N, i;
+    printf("");
     scanf("%d", &N); 
 
     int arr[N];
