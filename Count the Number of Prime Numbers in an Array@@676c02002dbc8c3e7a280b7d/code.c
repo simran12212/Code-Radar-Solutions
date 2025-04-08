@@ -13,9 +13,9 @@ int isPrime(int num) {
     return 1; 
 }
 
-int countPrimes(int arr[], int n) {
+int countPrimes(int arr[], int N) {
     int count = 0;
-    for (int i = 0; i < n; i++) {
+    for (int i = 0; i < N; i++) {
         if (isPrime(arr[i])) {
             count++; 
         }
@@ -24,15 +24,15 @@ int countPrimes(int arr[], int n) {
 }
 
 int main() {
-    int n;
-    scanf("%d", &n); 
+    int N;
+    scanf("%d", &N); 
 
-    int arr[n];
-    for (int i = 0; i < n; i++) {
+    int arr[N];
+    for (int i = 0; i < N; i++) {
         scanf("%d", &arr[i]); 
     }
 
-    int primeCount = countPrimes(arr, n);
+    int primeCount = countPrimes(arr, N);
     printf("%d", primeCount); 
 
     return 0;
