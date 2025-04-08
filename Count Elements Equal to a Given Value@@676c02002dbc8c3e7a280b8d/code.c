@@ -4,11 +4,11 @@ int main() {
     int n, k, count = 0;
 
     // Input the size of the array and the value of K
-    printf("Enter the number of elements (N) and the value to count (K): ");
+    printf("");
     scanf("%d %d", &n, &k);
 
     int array[n];
-    printf("Enter the elements of the array:\n");
+    printf("\n");
     for (int i = 0; i < n; i++) {
         scanf("%d", &array[i]);
         if (array[i] == k) {
