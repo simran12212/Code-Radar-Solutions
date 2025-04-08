@@ -1,22 +1,34 @@
 #include <stdio.h>
 
-int main() {
-    int N, i, largestEven = -1;
+int findLargestEven(int arr[], int size) {
+    int largestEven = -1;
 
-    printf("");
-    scanf("%d", &N);
-
-    int array[N];
-    printf("\n");
-    for (i = 0; i < N; i++) {
-        scanf("%d", &array[i]);
-        if (array[i] % 2 == 0 && array[i] > largestEven) {
-            largestEven = array[i];
+    for (int i = 0; i < size; i++) {
+        if (arr[i] % 2 == 0 && arr[i] > largestEven) {
+            largestEven = arr[i];
         }
     }
 
-    // Ensure proper spacing in the output
-    printf("%d\n", largestEven);
+    return largestEven;
+}
+
+int main() {
+    int n;
+    printf("");
+    scanf("%d", &n);
+
+    int array[n];
+    printf("\n");
+    for (int i = 0; i < n; i++) {
+        scanf("%d", &array[i]);
+    }
+
+    int result = findLargestEven(array, n);
+    if (result != -1) {
+        printf("%d\n", result);
+    } else {
+        printf("-1\n");
+    }
 
     return 0;
 }
